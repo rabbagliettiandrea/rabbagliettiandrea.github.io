@@ -2,7 +2,7 @@
 layout: post
 title: "Should you learn Flask or Django?"
 date: 2016-01-07
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.
+description: Flask vs Django Framework, what about the choice?
 img: flask-vs-django.jpg
 ---
 Flask just seemed a lot more straightforward to me. There was no "magic", just a small API to learn. 

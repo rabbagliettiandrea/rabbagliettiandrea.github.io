@@ -2,7 +2,7 @@
 layout: post
 title: "Elegant coding Vs. computational complexity: the truth"
 date: 2016-11-29
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.
+description: Computational load factor of function, a python example
 img: big-o-notation.jpg
 ---
 As developer, is very frequent that you could incur into the most 

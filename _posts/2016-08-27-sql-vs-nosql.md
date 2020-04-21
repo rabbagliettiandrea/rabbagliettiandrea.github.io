@@ -2,7 +2,7 @@
 layout: post
 title: "[ITA] SQL vs NoSQL cosa scegliere e quando? Il confronto!"
 date: 2016-01-04
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.
+description: SQL o NoSQL, c'è davvero da scegliere?
 img: sql-nosql.jpg
 ---
 Sfatiamo qualche mito riguardo l'eterno confronto tra SQL e NoSQL, 

@@ -2,7 +2,7 @@
 layout: post
 title: "[ITA] Costruisci la tua torretta anti-uomo con la computer vision e python"
 date: 2016-10-14
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.
+description: Essere preparati a quando il mondo verrà invaso dalle intelligenze artificiali.
 img: torretta.jpg
 ---
 Perchè ti servirà conoscere Python quando il mondo sarà governato da robot?

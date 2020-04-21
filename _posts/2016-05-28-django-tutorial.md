@@ -2,7 +2,7 @@
 layout: post
 title: "[ITA] Django Framework Python Tutorial in Italiano - Si inizia!"
 date: 2016-05-28
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.
+description: Video tutorial su Python/Django, in italiano!
 img: django-tutorial.jpg
 ---
 Serie di video tutorial su Python/Django Framework.

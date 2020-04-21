@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About me
-description: Andrea Rabbaglietti life, career, passions, hobbies
+description: Andrea Rabbaglietti's life, career, passions, hobbies
 img: i-rest.jpg
 fig-caption: Andrea Rabbaglietti
 ---
@@ -13,7 +13,6 @@ fig-caption: Andrea Rabbaglietti
 * Implemented Postgres HA replication master-master
 * Designed 2 currently working platforms on VMware Virtualization: AMD-based cluster (2 Opteron hosts), vSphere 4.1; 5 ESX Server 6 core, 64GB RAM, 2 NIC 10GbE, vSphere 5.x;
 * _Hobby proj_ Bootstrapped a fully working Linux From Scratch Operative System - LFS is a project that provides you with step-by-step instructions for building your own custom Linux system, entirely from source code.
-
 
 I love to embed processes in a fancy way that let companies leverage the real tech deal.
 
