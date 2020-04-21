@@ -1,0 +1,26 @@
+title: Hello, world! I'm Andrea Rabbaglietti
+description: >
+  Articles and cool stuff about personal projects, scalability, cloud architectures, and distributed system
+url: "https://rabbagliettiandrea.github.io"
+exclude: [".idea"]
+
+# Author Settings
+author: Andrea Rabbaglietti
+author-img: andrea-rabbaglietti.jpg
+about-author: >
+  I really love startups, cloud architectures, distributed systems,
+  big-data crunching, caching optimization and scalability.
+social-github: rabbagliettiandrea
+social-linkedin: andrearabbaglietti
+social-email: rabbagliettiandrea@gmail.com
+
+# Build Settings
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
+
+# Pagination Settings
+paginate: 8
+paginate_path: "/page/:num"
