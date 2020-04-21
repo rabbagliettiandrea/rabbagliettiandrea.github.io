@@ -12,7 +12,9 @@ Primissimo capitolo introduttivo:
 * backend vs frontend
 * il Framework
 
+<div class="video">
 <iframe width="460" height="315" src="https://www.youtube.com/embed/0hBUyt9ShiY"
 frameborder="0" allow="accelerometer; autoplay; 
 encrypted-media; gyroscope; picture-in-picture" 
 allowfullscreen></iframe>
+</div>
