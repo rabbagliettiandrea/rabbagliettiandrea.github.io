@@ -7,6 +7,7 @@ exclude: [".idea"]
 # Author Settings
 author: Andrea Rabbaglietti
 author-img: andrea-rabbaglietti.jpg
+author-img-meta: andrea-rabbaglietti-bw.jpg
 about-author: >
   I really love startups, cloud architectures, distributed systems,
   big-data crunching, caching optimization and scalability.
