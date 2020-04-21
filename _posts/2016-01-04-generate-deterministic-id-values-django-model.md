@@ -2,7 +2,7 @@
 layout: post
 title: "Generate deterministic ID values in a Django Model"
 date: 2016-01-04
-description: Deterministic ID values: strange behavior or what
+description: Deterministic ID values - strange behavior or what
 img: race-condition.jpg
 ---
 OK, let's talk about a thing that **seems** trivial & obvious, but _unfortunately_ it is not.
