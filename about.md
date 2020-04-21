@@ -3,7 +3,6 @@ layout: post
 title: About me
 description: Andrea Rabbaglietti's life, career, passions, hobbies
 img: i-rest.jpg
-fig-caption: Andrea Rabbaglietti
 ---
 
 * Founded 2 companies, 1 successful with 3 Mln euro per year of revenues;
