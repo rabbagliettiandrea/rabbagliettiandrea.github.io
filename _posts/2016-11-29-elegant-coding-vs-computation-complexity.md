@@ -69,5 +69,3 @@ _but.._
 {% endhighlight %}
 
 **Lesson is: sometimes ugly (but performant!) is better :)**
-
-![The Good, the Bad, the Ugly](/assets/img/good-bad-ugly.jpg)

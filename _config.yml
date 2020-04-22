@@ -3,6 +3,7 @@ description: >
   Articles and cool stuff about personal projects, scalability, cloud architectures, and distributed system
 url: "https://rabbagliettiandrea.github.io"
 exclude: [".idea"]
+permalink: /:title/
 
 # Author Settings
 author: Andrea Rabbaglietti
