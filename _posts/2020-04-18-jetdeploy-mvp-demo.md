@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "JetDeploy - Software as a Service"
-date: 2020-04-17
+date: 2020-04-18
 description: Enable developers to build, run, and deploy applications in the cloud
 img: jetdeploy-cover.jpg
 ---
