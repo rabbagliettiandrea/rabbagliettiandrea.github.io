@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ho organizzato un workshop!"
+title: "[ITA] Ho organizzato un workshop!"
 date: 2018-04-17
 description: Conferenza su Imprenditoria digitale e startup
 img: foto-conferenza.jpg
