@@ -5,8 +5,6 @@ date: 2016-01-04
 description: Deterministic ID values - strange behavior or what
 img: race-condition.jpg
 ---
-[https://www.celero.it/andria/supermercato/](https://www.celero.it/andria/supermercato/)
-
 OK, let's talk about a thing that **seems** trivial & obvious, but _unfortunately_ it is not.
 
 Assume that we want that when we insert objects, those objects has to have an unique, 
