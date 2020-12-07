@@ -17,10 +17,10 @@ What if we don’t want to reinvent the wheel? Well, there are many (opensource)
 OpenTracing is a widely adopted API (e.g. by Jaeger or Zipkin) that defines how to capture distributed traces.
 
 In OpenTracing we can model each captured event (that is, from one microservice) as a "span". Every "span" can carry a "context", to store `key:value` pairs. Every "span" can be related to another "span" with "child-of" or “follows-from” relation.
-Having those objects in mind, we can easily leverage them in OpenTracing through `tracer.inject(...)` / `tracer.extract(...à)` methods.
+Having those objects in mind, we can easily leverage them in OpenTracing through `tracer.inject(...)` / `tracer.extract(...)` methods.
 
 Example:
-`_NodeJs makes a RPC call_ → _Apache Kafka_ → _Rust Server processes the call_`
+`NodeJs makes a RPC call → Apache Kafka → Rust Server processes the call`
 
 Let's say we have a NodeJS application that it is getting a client-request and to process that request it has to call a RPC written in Rust through Kafka.
 Since the NodeJS app it’s the "root span", it creates a trace ID.
