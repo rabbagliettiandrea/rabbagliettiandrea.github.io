@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Strategy to detect performance issues and regressions during the development/release cycle of a software component"
+title: "Detect performance issues and regressions"
 date: 2020-12-08
 description: "Strategy to detect performance issues and regressions during the development/release cycle of a software component"
-img: regression.jpg
+img: regression.png
 ---
 Instead of relying on reactive monitoring to detect and identify issues and regressions ex-post, it is way more efficient for the team to be mindful about what they deploy, identifying and quantifying the impact of changes of the infrastructure and applications.
 
