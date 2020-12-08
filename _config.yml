@@ -1,8 +1,8 @@
-title: Hello, world! I'm Andrea Rabbaglietti
+title: Andrea Rabbaglietti's Blog
 description: >
   Articles and cool stuff about personal projects, scalability, cloud architectures, and distributed system
 url: "https://rabbagliettiandrea.github.io"
-exclude: [".idea"]
+exclude: []
 permalink: /:title/
 
 # Author Settings
@@ -10,7 +10,7 @@ author: Andrea Rabbaglietti
 author-img: andrea-rabbaglietti.jpg
 author-img-meta: andrea-rabbaglietti-bw.jpg
 about-author: >
-  I really love startups, cloud architectures, distributed systems,
+  I really love cloud architectures, distributed systems,
   big-data crunching, caching optimization and scalability.
 social-github: rabbagliettiandrea
 social-linkedin: andrearabbaglietti
@@ -24,5 +24,5 @@ plugins:
   - jemoji
 
 # Pagination Settings
-paginate: 8
+paginate: 100
 paginate_path: "/page/:num"

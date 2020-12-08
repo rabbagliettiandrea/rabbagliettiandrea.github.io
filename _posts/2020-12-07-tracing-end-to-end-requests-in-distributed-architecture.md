@@ -26,3 +26,5 @@ Let's say we have a NodeJS application that it is getting a client-request and t
 Since the NodeJS app it’s the "root span", it creates a trace ID.
 
 Now, to be able to track it through a Kafka message we need to inject it into a custom header that will propagate to the next “span context” and to do that we can call `Tracer.inject(spanContext)` to enrich the "carrier", then we can easily extract `spanContext` from the carrier for continuing trace in the server.
+
+**Finally, leveraging distributed tracing let us to have an ensemble view of the system, tracking down not just perfomance at node level but treating the entire system like a black-box.**
