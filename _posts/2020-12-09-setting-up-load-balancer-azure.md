@@ -33,7 +33,7 @@ For showcasing the general functionality we’ll setup a failover functionality 
 
 The Terraform code for setting up the corresponding Traffic Manager profile can be found below.
 
-```
+{% highlight python %}
 resource "azurerm_traffic_manager_profile" "my-traffic-manager-profile" {
   name                   = "my-traffic-manager-profile"
   resource_group_name    = "my-traffic-manager"
@@ -52,44 +52,9 @@ resource "azurerm_traffic_manager_profile" "my-traffic-manager-profile" {
     tolerated_number_of_failures = 3 # the number of failing health probes that will be tolerated before marking the endpoint as unhealthy
   }
 }
-```
+{% endhighlight %}
 
 For our failover use case the `Priority` method is the one we are going with. We’ll provide two endpoints, a primary and a secondary and the former will have a higher priority (=a lower value). In terms of Terraform code this configuration will look like this.
-
-
-Jun
- Vancouver, BC
-Amazon US
-Medium
-Be a Patreon
-Support Jun
-Twitter
-Facebook
-StackOverflow
-How to highlight code on a Jekyll site - Syntax Highlighting February 11, 2019   1 minute read  
- Menu
-1 Jekyll Rouge Highlight Tag
-Example:
-2 GitHub Flavored Markdown Fenced Code Blocks
-Example:
-Example with language specified:
-Result
-References:
-Support Jun
-To have code snippets highlighted so that they are more reader-friendly, we have to wrap our code using the following syntax.
-
-1 Jekyll Rouge Highlight TagPermalink
-You can install kramdown markdown parser and rouge highlighter - Jekyll’s default highlighter using the following command:
-
-gem install kramdown rouge
-After installing kramdown and rouge, you can add the following to your _config.yml file.
-
-markdown: kramdown
-highlighter: rouge
-    input: GFM
-After that, you can now highlight your code by surrounding your code with {% highlight language %} and {% endhighlight %}. Replace languageCode with the code language. You can refer to this rouge doc for the list of supported languages.
-
-Example:Permalink
 
 {% highlight python %}
 resource "azurerm_traffic_manager_endpoint" "primary" {
@@ -116,11 +81,14 @@ Afterwards our DNS requests should be rerouted the Google’s DNS server.
 
 To not interrupt DNS queries all over the world I decided to take the less interfering path of just disabling the cloudflare endpoint like so:
 
-```$ az network traffic-manager endpoint update -g my-traffic-manager --profile-name my-traffic-manager-profile -n cloudflare --endpoint-status Disabled```
+```
+$ az network traffic-manager endpoint update -g my-traffic-manager --profile-name my-traffic-manager-profile -n cloudflare --endpoint-status Disabled
+```
 
 This simulates an outage of our primary endpoint and after a short amount of time the following happens.
 
-```$ while 1; do host rabbagliettiandrea.github.io my-traffic-manager-profile.trafficmanager.net; sleep 1; done
+```
+$ while 1; do host rabbagliettiandrea.github.io my-traffic-manager-profile.trafficmanager.net; sleep 1; done
 ...
 Using domain server:
 Name: my-traffic-manager-profile.trafficmanager.net
@@ -141,7 +109,8 @@ rabbagliettiandrea.github.io has address 185.199.109.153
 rabbagliettiandrea.github.io has address 185.199.111.153
 rabbagliettiandrea.github.io has address 185.199.110.153
 rabbagliettiandrea.github.io has address 185.199.108.153
-...```
+...
+```
 
 As you can see the failover to Google’s DNS server works just as expected. And if we re-enable the cloudflare endpoint, requests will be routed back to it again automatically.
 
