@@ -91,7 +91,7 @@ After that, you can now highlight your code by surrounding your code with {% hig
 
 Example:Permalink
 
-{% highlight %}
+{% highlight python %}
 resource "azurerm_traffic_manager_endpoint" "primary" {
   name                = "cloudflare"
   resource_group_name = "my-traffic-manager"
