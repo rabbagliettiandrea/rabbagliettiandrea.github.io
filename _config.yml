@@ -17,7 +17,6 @@ social-linkedin: andrearabbaglietti
 social-email: rabbagliettiandrea@gmail.com
 
 # Build Settings
-markdown: kramdown
 plugins:
   - jekyll-sitemap
   - jekyll-paginate
