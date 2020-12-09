@@ -17,7 +17,7 @@ There I was, sitting in front of cloud resources having terabytes of memory but 
 
 After reading about it for a few minutes I was pretty sure that this is what a was looking for. Let’s see if I was right.
 
-# ..but does it _really_?
+# ..but does it, _really_?
 Azure Traffic Manager’s functionality is based on DNS. It acts as an DNS alias that is being rewritten depending on the load balancing algorithm, of which it supports the following:
 
 - Priority - provide multiple endpoints, the one that is available and has the highest priority receives all of the traffic
