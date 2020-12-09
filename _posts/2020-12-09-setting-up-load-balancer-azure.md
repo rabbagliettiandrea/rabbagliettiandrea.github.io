@@ -33,7 +33,8 @@ For showcasing the general functionality we’ll setup a failover functionality 
 
 The Terraform code for setting up the corresponding Traffic Manager profile can be found below.
 
-```resource "azurerm_traffic_manager_profile" "my-traffic-manager-profile" {
+```
+resource "azurerm_traffic_manager_profile" "my-traffic-manager-profile" {
   name                   = "my-traffic-manager-profile"
   resource_group_name    = "my-traffic-manager"
   traffic_routing_method = "Priority"
@@ -50,11 +51,48 @@ The Terraform code for setting up the corresponding Traffic Manager profile can 
     timeout_in_seconds           = 10 # the time the probing agent waits for a response before considering a check as failed
     tolerated_number_of_failures = 3 # the number of failing health probes that will be tolerated before marking the endpoint as unhealthy
   }
-}```
+}
+```
 
 For our failover use case the `Priority` method is the one we are going with. We’ll provide two endpoints, a primary and a secondary and the former will have a higher priority (=a lower value). In terms of Terraform code this configuration will look like this.
 
-```resource "azurerm_traffic_manager_endpoint" "primary" {
+
+Jun
+ Vancouver, BC
+Amazon US
+Medium
+Be a Patreon
+Support Jun
+Twitter
+Facebook
+StackOverflow
+How to highlight code on a Jekyll site - Syntax Highlighting February 11, 2019   1 minute read  
+ Menu
+1 Jekyll Rouge Highlight Tag
+Example:
+2 GitHub Flavored Markdown Fenced Code Blocks
+Example:
+Example with language specified:
+Result
+References:
+Support Jun
+To have code snippets highlighted so that they are more reader-friendly, we have to wrap our code using the following syntax.
+
+1 Jekyll Rouge Highlight TagPermalink
+You can install kramdown markdown parser and rouge highlighter - Jekyll’s default highlighter using the following command:
+
+gem install kramdown rouge
+After installing kramdown and rouge, you can add the following to your _config.yml file.
+
+markdown: kramdown
+highlighter: rouge
+    input: GFM
+After that, you can now highlight your code by surrounding your code with {% highlight language %} and {% endhighlight %}. Replace languageCode with the code language. You can refer to this rouge doc for the list of supported languages.
+
+Example:Permalink
+
+{% highlight %}
+resource "azurerm_traffic_manager_endpoint" "primary" {
   name                = "cloudflare"
   resource_group_name = "my-traffic-manager"
   profile_name        = "my-traffic-manager-profile"
@@ -70,7 +108,8 @@ resource "azurerm_traffic_manager_endpoint" "secondary" {
   target              = "8.8.8.8"
   type                = "externalEndpoints"
   priority            = 2
-}```
+}
+{% endhighlight %}
 
 To test our configuration we simply need to constantly send DNS requests to our Traffic Manager instance and meanwhile shutdown the Cloudflare DNS server. 
 Afterwards our DNS requests should be rerouted the Google’s DNS server.
