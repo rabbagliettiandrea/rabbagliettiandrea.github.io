@@ -2,7 +2,7 @@
 layout: post
 title: "Setting up a load balancer with failover support in Azure"
 date: 2020-12-09
-description: "Strategy to detect performance issues and regressions during the development/release cycle of a software component"
+description: "Use Terraform to setup a load balancer with failover support in Azure"
 img: azure-loadbalancer.jpg
 ---
 
